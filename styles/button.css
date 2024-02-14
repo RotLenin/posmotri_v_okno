@@ -1,0 +1,22 @@
+.button {
+    height: 34px;
+    color: var(--main);
+    font: var(--font-s);
+    font-weight: var(--fw-bold);
+    border: 1px solid var(--main);
+    background-color: transparent;
+}
+
+.button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--gray);
+}
+
+.button:focus {
+    outline: var(--outline-base);
+    outline-offset: var(--outline-offset);
+}

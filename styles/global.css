@@ -1,0 +1,82 @@
+:root {
+    /** Colors */
+    --main : #fff;
+    --second : rgba(255, 255, 255, .7);
+    --mainBg : #1B1919;
+    --gray : #545050;
+    /* #1E1E1E */
+
+    /** Fonts */
+    --oswald : Oswald, sans-serif;
+    --fira : 'Fira Sans Condensed', sans-serif;
+
+    --fw-normal : 400;
+    --fw-bold : 700;
+
+    --font-size-s : 18px;
+    --font-line-s : normal;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--fira);
+
+    --font-size-l : 18px;
+    --font-line-l : normal;
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--oswald);
+
+    --font-size-xl : 75px;
+    --font-line-xl : 94%;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--oswald);
+
+    --border-base : 1px solid var(--main);
+    --outline-base : 1px solid var(--main);
+    --outline-offset : 2px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
