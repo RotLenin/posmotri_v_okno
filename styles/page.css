@@ -1,0 +1,15 @@
+.page {
+    inline-size: 1200px;
+    block-size: 100%;
+    margin: auto;
+    color: var(--white);
+    font: var(--font-s);
+    font-weight: var(--fw-normal);
+    background-color: var(--mainBg);
+
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

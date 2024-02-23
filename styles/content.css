@@ -1,0 +1,113 @@
+.content {
+    width: 100%;
+    display: grid;
+    grid-template: 78px 1fr/ 2fr 1fr;
+    gap: 0 30px;
+}
+
+.content__details {
+    grid-row: 1 / span 2;
+    grid-column: 2 / 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font: var(--font-xl);
+    color: var(--main);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    flex: 1 1 auto;
+}
+
+.content__accent {
+    color: var(--gray);
+}
+
+.content__list {
+    width: 100%;
+    max-height: 295px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 0;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    /** Fix to show button border */
+    padding: 2px;
+}
+
+.content__list-item {
+    color: var(--main);
+    list-style-type: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+.content__card-link {
+    color: inherit;
+    display: block;
+    background-color: transparent;
+    text-decoration: inherit;
+}
+
+.content__card-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content__card-link:focus-within {
+    outline: var(--outline-base);
+}
+
+.content__card-link_current {
+    background-color: var(--gray);
+}
+
+.content__video-card {
+    width: 100%;
+    display: grid;
+    grid-template: 100px / 50% 50%;
+    overflow: hidden;
+}
+
+.content__video-card-description-container {
+    max-width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    text-decoration: inherit;
+    color: var(--main);
+    overflow: hidden;
+}
+
+.content__video-card-title {
+    font: var(--font-l);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    text-decoration: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.content__video-card-description {
+    max-height: 70px;
+    font: var(--font-s);
+    font-weight: var(--fw-normal);
+    text-decoration: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content__video-card-thumbnail {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
