@@ -1,7 +1,7 @@
 .content {
     width: 100%;
     display: grid;
-    grid-template: 78px 456px / 1fr 400px;
+    grid-template: 78px 1fr/ 2fr 1fr;
     gap: 0 30px;
 }
 
@@ -28,6 +28,7 @@
 
 .content__list {
     width: 100%;
+    max-height: 295px;
     position: relative;
     display: flex;
     flex-direction: column;

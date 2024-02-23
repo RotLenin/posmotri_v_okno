@@ -73,22 +73,13 @@
     outline: none;
 }
 
-.search-form__textfield:focus-visible {
-    outline: var(--outline-base);
-    outline-offset: var(--outline-offset);
-}
-
 .search-form__label:has(input[type='checkbox']) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-form__label:has(input[type='checkbox']:focus-visible) {
-    outline: var(--outline-base);
-}
-
-.search-form__label:focus-visible {
+.search-form__label:has(*:focus-visible) {
     outline: var(--outline-base);
 }
 
